@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="SpringMvcDoem:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="SpringMvcDoem.war">
+      <element id="artifact" artifact-name="SpringMvcDoem:war exploded" />
+    </root>
+  </artifact>
+</component>
