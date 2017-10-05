@@ -115,8 +115,9 @@
 
     <!-- 配置事务切面 -->
     <aop:config>
-        <aop:pointcut id="serviceOperation"
-                      expression="execution(* com.jjyy.controller.*.*(..))" />
+        <!-- 只对控制层、业务逻辑层实施事务 -->
+        <aop:pointcut id="serviceOperation"  expression="execution(* com.jjyy.controller.*.*(..))" />
+        <!-- Advisor定义，切入点和通知分别为txPointcut、txAdvice -->
         <aop:advisor advice-ref="txAdvice" pointcut-ref="serviceOperation" />
     </aop:config>
 </beans>
