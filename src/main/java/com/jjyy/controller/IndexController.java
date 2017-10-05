@@ -1,16 +1,15 @@
-package com.liuzhiqiang.controller;
+package com.jjyy.controller;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.liuzhiqiang.dao.UserMapper;
-import com.liuzhiqiang.model.User;
+import com.jjyy.dao.UserMapper;
+import com.jjyy.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.xml.ws.Action;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -36,7 +35,7 @@ public class IndexController {
     @RequestMapping(value = "/index", method = RequestMethod.GET)
     public ModelAndView getindex(Integer id, ModelMap modelMap) {
         User user = userMapper.selectByPrimaryKey(new Long("1"));
-        modelMap.put("name", "liuzhiqiang");
+        modelMap.put("name", "jjyy");
         modelMap.put("user", user);
         return new ModelAndView("index", modelMap);
     }

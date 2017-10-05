@@ -1,4 +1,4 @@
-package com.liuzhiqiang.model;
+package com.jjyy.model;
 
 public class Country {
     /**

@@ -11,7 +11,7 @@
        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
 
     <!-- 自动扫描 -->
-    <context:component-scan base-package="com.liuzhiqiang" />
+    <context:component-scan base-package="com.jjyy" />
 
     <!-- 引入文件属性 -->
     <!--<context:property-placeholder location="classpath:config/jdbc.properties" />-->
@@ -61,7 +61,7 @@
     </bean>
 
     <!-- 数据源选择，targetDataSources中选择数据源，若找不到，则使用defaultTargetDataSource-->
-    <bean id="multipleDataSource" class="com.liuzhiqiang.config.MultipleDataSource">
+    <bean id="multipleDataSource" class="com.jjyy.config.MultipleDataSource">
         <property name="defaultTargetDataSource" ref="mySqlDataSource"/>
         <property name="targetDataSources">
             <map>
@@ -82,7 +82,7 @@
 
     <!-- DAO接口所在包名，Spring会自动查找其下的类 -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.liuzhiqiang.dao" />
+        <property name="basePackage" value="com.jjyy.dao" />
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
     </bean>
 
@@ -116,7 +116,7 @@
     <!-- 配置事务切面 -->
     <aop:config>
         <aop:pointcut id="serviceOperation"
-                      expression="execution(* com.liuzhiqiang.controller.*.*(..))" />
+                      expression="execution(* com.jjyy.controller.*.*(..))" />
         <aop:advisor advice-ref="txAdvice" pointcut-ref="serviceOperation" />
     </aop:config>
 </beans>

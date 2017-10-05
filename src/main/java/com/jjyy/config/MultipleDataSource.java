@@ -1,4 +1,4 @@
-package com.liuzhiqiang.config;
+package com.jjyy.config;
 import org.springframework.jdbc.datasource.lookup.AbstractRoutingDataSource;
 /**
  * Created by lzq on 2017/9/9.

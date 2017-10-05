@@ -1,7 +1,7 @@
-package com.liuzhiqiang.dao;
+package com.jjyy.dao;
 
-import com.liuzhiqiang.model.City;
-import com.liuzhiqiang.model.CityExample;
+import com.jjyy.model.City;
+import com.jjyy.model.CityExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 

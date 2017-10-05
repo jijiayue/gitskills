@@ -1,7 +1,7 @@
-package com.liuzhiqiang.dao;
+package com.jjyy.dao;
 
-import com.liuzhiqiang.model.UserInfo;
-import com.liuzhiqiang.model.UserInfoExample;
+import com.jjyy.model.UserInfo;
+import com.jjyy.model.UserInfoExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 

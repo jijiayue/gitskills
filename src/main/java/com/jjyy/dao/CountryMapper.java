@@ -1,7 +1,7 @@
-package com.liuzhiqiang.dao;
+package com.jjyy.dao;
 
-import com.liuzhiqiang.model.Country;
-import com.liuzhiqiang.model.CountryExample;
+import com.jjyy.model.Country;
+import com.jjyy.model.CountryExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 

@@ -17,13 +17,13 @@
                         password="lzq199528">
         </jdbcConnection>
 
-        <javaModelGenerator targetPackage="com.liuzhiqiang.model" targetProject="src\main\java">
+        <javaModelGenerator targetPackage="com.jjyy.model" targetProject="src\main\java">
             <property name="trimStrings" value="true" />
         </javaModelGenerator>
 
         <sqlMapGenerator targetPackage="mappers"  targetProject="src\main\resources"/>
 
-        <javaClientGenerator type="XMLMAPPER" targetPackage="com.liuzhiqiang.dao"  targetProject="src\main\java"/>
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.jjyy.dao" targetProject="src\main\java"/>
 
         <table tableName="%">
             <generatedKey column="id" sqlStatement="Mysql"/>

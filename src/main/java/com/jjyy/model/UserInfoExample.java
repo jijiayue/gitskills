@@ -1,4 +1,4 @@
-package com.liuzhiqiang.model;
+package com.jjyy.model;
 
 import java.util.ArrayList;
 import java.util.List;
